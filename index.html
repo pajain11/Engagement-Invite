@@ -963,7 +963,7 @@ function goBack(){
 }
 
 function updateCD(){
-  var t=new Date('2026-06-24T11:30:00'),n=new Date(),d=Math.max(0,t-n);
+  var t=new Date('2026-06-23T11:30:00'),n=new Date(),d=Math.max(0,t-n);
   var map={CDD:Math.floor(d/864e5),CDH:Math.floor((d%864e5)/36e5),CDM:Math.floor((d%36e5)/6e4)};
   Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=map[id];});
 }
